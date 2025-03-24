@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh  # <-- Changed from #!/bin/bash to #!/bin/zsh
 
 # Install Oh My Zsh (if not already installed)
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -8,7 +8,7 @@ else
     echo "Oh My Zsh is already installed."
 fi
 
-# Install Powerlevel10k theme (better than default)
+# Install Powerlevel10k theme
 if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
     echo "Installing Powerlevel10k theme..."
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
