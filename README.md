@@ -15,3 +15,18 @@ curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main
 ```
 
 This will set up your terminal to have syntax highlighting ect
+
+### Delete old branches limit 10
+```
+curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main/delete_old_branch_limit_10.sh | bash
+```
+
+This will delete up to 10 branches that have not had a commit in over 90 days and have a branch prefix of ("refactor" "feat" "new" "bugfix" "fix" "hotfix")
+
+
+### Delete old branches limit 10
+```
+curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main/delete_old_branch_unlimited.sh | bash
+```
+
+This will delete up to 10 branches that have not had a commit in over 90 days and have a branch prefix of ("refactor" "feat" "new" "bugfix" "fix" "hotfix")
