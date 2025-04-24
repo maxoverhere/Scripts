@@ -2,7 +2,7 @@
 
 # Configuration
 CUTOFF_DATE=$(date -v-90d "+%Y-%m-%d") # Approx. 90 days ago
-MAX_BRANCH_DELETIONS=10 # Capped number of branches to delete
+MAX_BRANCH_DELETIONS=${1:-10} # Default to 10 if no parameter provided
 DELETABLE_PREFIXES=("refactor" "feat" "new" "bugfix" "fix" "hotfix") # Branch prefixes eligible for deletion
 DELETED_BRANCH_COUNT=0
 LOG_DIR=~/.scripts/logs
@@ -20,7 +20,7 @@ fi
 
 # Initialize log
 echo "Script run at: $(date "+%Y-%m-%d %H:%M:%S")" > "$LOG_FILE"
-echo "Starting branch deletion process..." >> "$LOG_FILE"
+echo "Starting branch deletion process with limit of $MAX_BRANCH_DELETIONS deletions..." >> "$LOG_FILE"
 echo "Only deleting branches with prefix of: ${DELETABLE_PREFIXES[*]}" >> "$LOG_FILE"
 echo >> "$LOG_FILE"
 
