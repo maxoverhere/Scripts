@@ -3,7 +3,7 @@
 ### Install Brew and basic software basic programs
 
 ```
-curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main/setup_brew | bash
+curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main/setup_brew.sh | bash
 ```
 
 This will install x-code brew and the basic tools like git and such
