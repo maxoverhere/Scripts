@@ -1,4 +1,4 @@
-# Scripts
+# Scripts (note only work for mac os)
 
 ### Install Brew and basic software basic programs
 
