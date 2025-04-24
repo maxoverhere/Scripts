@@ -25,6 +25,6 @@ This will delete up to 10 branches that have not had a commit in over 90 days an
 
 
 ```
-curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main/delete_old_branch_limit_10.sh | bash -s -- 5
+curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main/delete_old_branch.sh | bash -s -- 5
 ```
 This will do the same but delete a custom number of branches, in the example above it is deleting only 5 branches.
