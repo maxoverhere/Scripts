@@ -29,7 +29,7 @@ curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main
 This will do the same but delete a custom number of branches, in the example above it is deleting only 5 branches.
 
 
-### Setup kubectl and kubectl fowarding tool relay
+### Setup kubectl and kubectl fowarding tool 'relay' 
 ```
 curl -fsSL https://raw.githubusercontent.com/maxoverhere/Scripts/refs/heads/main/setup_kubectl_relay.sh | bash
 ```
