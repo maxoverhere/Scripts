@@ -1,0 +1,10 @@
+### Get Dead Letter by ID
+POST http://localhost:8080/rpc/dead-letters/v1
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "method": "getById",
+  "params": ["0346adf3-677f-428d-8b7e-1829a47cbec6"],
+  "id": 1
+}
